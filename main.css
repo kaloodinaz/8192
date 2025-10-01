@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 html, body {
     margin: 0;
     padding: 0;
     background: #faf8ef;
     color: #776e65;
-    font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+    font-family: "Poppins", "Helvetica Neue", Arial, sans-serif;
     font-size: 18px; }
   
   body {
-    margin: 80px 0; }
+    margin: 20px 0; }
   
   .heading:after {
     content: "";
@@ -53,7 +53,7 @@ html, body {
   .score-container, .best-container {
     position: relative;
     display: inline-block;
-    background: #bbada0;
+    background: #9f8f80;
     padding: 15px 25px;
     font-size: 25px;
     height: 25px;
@@ -782,4 +782,16 @@ html, body {
 @media only screen and (min-width: 739px) {
 .block-728{display:flex;justify-content:center;align-items:center;margin-bottom:10px;border-radius:10px;margin-top:10px}
 .block-300{display:none}
+}
+ul.unstyled.tips-and-tricks{list-style:none;padding:0;margin:30px auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;max-width:1200px}
+ul.unstyled.tips-and-tricks li{background:#e1e1e1;border-radius:10px;padding:16px;box-shadow:0 2px 6px #00000014;transition:transform .2s ease,box-shadow .2s ease;font-size:16px;line-height:1.5;color:#333}
+ul.unstyled.tips-and-tricks li:hover{transform:translateY(-4px);box-shadow:0 6px 12px #0000001f}
+@media (max-width: 600px) {
+ul.unstyled.tips-and-tricks{grid-template-columns:1fr}
+}
+@media (min-width: 601px) and (max-width: 992px) {
+ul.unstyled.tips-and-tricks{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+}
+@media (min-width: 993px) {
+ul.unstyled.tips-and-tricks{grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
 }
